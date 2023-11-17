@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Meu Primeiro Script</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            background-color: rgb(204, 75, 0)
+        }
+
+        h1 {
+            background-color: #333;
+            color: rgb(204, 75, 0);
+            width: fit-content;
+            padding: 2vh 5vw;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 5vh;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Agora já quebrei a maldição (em inglês ;)</p>
+
+    <script>
+        var n1 = Number.parseInt(window.prompt("Digite um número: "))
+        var n2 = Number.parseInt(window.prompt("Digite outro número: "))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e e ${n2} é igual a ${s}`)
+
+        /* É possível utilizar apenas o comando 'Number' que o próprio JS identifica se o número é real (parseFloat) ou Inteiro (parseInt) */
+
+        /* Também é possível transformar um number em string aplicando o comando String(n) ou n.toString() */
+
+        /* Formatando as Strings:
+                s.lenght = quantos caracteres a string tem
+                s.toUpperCase() = tudo para MAIÚSCULAS
+                s.toLowerCase() = tudo para minúsculas */
+    </script>
+</body>
+</html>

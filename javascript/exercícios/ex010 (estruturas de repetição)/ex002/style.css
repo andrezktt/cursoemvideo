@@ -1,0 +1,42 @@
+@charset "UTF-";
+
+body {
+    background: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e1dd;
+    text-align: center;
+}
+
+header {
+    color: #ffb703;
+}
+
+section {
+    background-color: #ffb703;
+    color: #222;
+    border-radius: 15px;
+    padding: 20px;
+    width:80vw;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.349);
+}
+
+p#numero {
+    font-weight: bold;
+}
+
+input {
+    background-color: #333;
+    color: #e0e1dd;
+}
+
+select {
+    width: 40%;
+    background-color: #333;
+    color: #e0e1dd;
+    padding: 10px;
+}
+
+footer {
+    
+}

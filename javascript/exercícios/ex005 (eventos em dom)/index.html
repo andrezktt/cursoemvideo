@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #333;
+        }
+        div#area {
+            display: block;
+            background-color: goldenrod;
+            color: #333;
+
+            font: normal bold 1.5em Arial;
+
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            margin-top: 250px;
+            border-radius: 15px;
+
+            line-height: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerHTML = 'Click!!!'
+            a.style.background = 'rgb(218, 91, 32)'
+        }
+
+        function entrar() {
+            a.innerHTML = 'Oiie'
+        }
+
+        function sair() {
+            a.innerHTML = 'Interaja...'
+            a.style.background = 'goldenrod'
+        }
+    </script>
+</body>
+</html>
