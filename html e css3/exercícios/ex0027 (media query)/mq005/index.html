@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Media Query</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>DAYTONA</h1>
+        <span id="burger" class="material-symbols-outlined" onclick="menuShow()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfólio</a></li>
+                <li><a href="#">Generative</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio hic, mollitia maxime non accusamus fuga blanditiis asperiores nobis repudiandae soluta. Consequuntur doloremque quo accusantium sapiente, nemo pariatur molestias facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis facere pariatur vel repellat repellendus, necessitatibus et dolor? Dignissimos ea voluptatibus, quos ipsam autem aliquam incidunt commodi, tempora alias molestiae at.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio hic, mollitia maxime non accusamus fuga blanditiis asperiores nobis repudiandae soluta. Consequuntur doloremque quo accusantium sapiente, nemo pariatur molestias facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis facere pariatur vel repellat repellendus, necessitatibus et dolor? Dignissimos ea voluptatibus, quos ipsam autem aliquam incidunt commodi, tempora alias molestiae at.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam odio hic, mollitia maxime non accusamus fuga blanditiis asperiores nobis repudiandae soluta. Consequuntur doloremque quo accusantium sapiente, nemo pariatur molestias facilis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis facere pariatur vel repellat repellendus, necessitatibus et dolor? Dignissimos ea voluptatibus, quos ipsam autem aliquam incidunt commodi, tempora alias molestiae at. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere architecto eum necessitatibus vel nemo nostrum! Facilis, quo natus libero suscipit accusamus impedit iste aspernatur, commodi atque ullam est quae adipisci.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            }   else {
+                menu.style.display = 'none'
+            }
+        }
+        function menuShow() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
+            }   else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

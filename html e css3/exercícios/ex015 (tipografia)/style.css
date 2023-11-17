@@ -1,0 +1,45 @@
+        /*Para importar fontes da web como do Google Fonts, basta copiar o link assim como este abaixo*/
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        body {
+            font-style: italic;
+            /* italic oblique normal*/
+
+            font-weight: 400;
+            /* lighter normal bold bolder + variações numéricas  */
+
+            font-size: 1em;
+            /* Medidas Absolutas
+            cm, mm, in, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %, ...
+
+            16px geralmente = 1em */
+
+            font-family: 'Montserrat', sans-serif;
+
+            /*text decoration: underline ...*/
+
+            background-color: #222;
+            color: rgb(220, 220, 197);
+            width: 60%;
+            padding-left: 30px;
+        }
+
+        h1 {
+            /* ShortHand (Atalho):
+            font-style -> font-weight -> font-size -> font-family */
+
+            font: normal 800 2em 'montserrat', sans-serif
+        }
+
+        h2{
+            font: normal 700 1.5em 'montserrat', sans-serif;
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 40px;
+        }

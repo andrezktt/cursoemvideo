@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos <br>Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video controls poster="imagens/Screen Shot 2022-05-14 at 3.56.23 PM.webp" width="560
+    "> <!-- autoplay loop -->
+        <source src="midia/kenny.mp4" type="video/mp4">
+        <source src="midia/kenny.m4v" type="video/mp4">
+        <source src="midia/kenny.webm" type="video/webm">
+        <source src="midia/kenny.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <p>Este vídeo abaixo foi inserido diretamente do YouTube. Basta apertar o botão compartilhar > Incorporar. O bom é que ele não consome os dados do servidor do proprietário, mas sim direto dos servidores do YouTube.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YKs0IL1AGaI?si=3W1-WjLV254bHPVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

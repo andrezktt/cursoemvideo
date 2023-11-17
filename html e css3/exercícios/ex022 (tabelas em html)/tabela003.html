@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabela 003</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.25em;
+            font-weight: bold;
+            background-color: dimgray;
+            color: white;
+            padding: 10px;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead, tfoot {
+            background-color: dimgray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: dimgray;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n - 1 */
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: white;
+        }
+
+        .pos {
+            text-align: center;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                tr, th, td;
+            TBODY
+                tr, th, td;
+            TFOOT
+                tr, th, td;
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col" style="width: 5px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">Porcentagem Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">1º</td>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+                <td class="num">21,88%</td>
+            </tr>
+            <tr>
+                <td class="pos">2º</td>
+                <td>Minas Gerais</td>
+                <td class="num">19 597 330</td>
+                <td class="num">10,11%</td>
+            </tr>
+            <tr>
+                <td class="pos">3º</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+                <td class="num">7,91%</td>
+            </tr>
+            <tr>
+                <td class="pos">4º</td>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+                <td class="num">6,96%</td>
+            </tr>
+            <tr>
+                <td class="pos">5º</td>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+                <td class="num">5,64%</td>
+            </tr>
+            <tr>
+                <td class="pos">6º</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+                <td class="num">5,36%</td>
+            </tr>
+            <tr>
+                <td class="pos">7º</td>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+                <td class="num">4,46%</td>
+            </tr>
+            <tr>
+                <td class="pos">8º</td>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+                <td class="num">4,33%</td>
+            </tr>
+            <tr>
+                <td class="pos">9º</td>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+                <td class="num">4,1%</td>
+            </tr>
+            <tr>
+                <td class="pos">10º</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 610 361</td>
+                <td class="num">3,75%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total de Habitantes</th>
+                <td scope="row" class="pos" colspan="2"><strong>203 062 512</strong></td>
+                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

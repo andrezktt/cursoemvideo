@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo do Hover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body{
+            background-color: #252422;
+            color: #FFFCF2;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1{
+            font-weight: 700;
+        }
+
+        p{
+            font-weight: 400;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            width: 300px;
+            background-color: #FFFCF2;
+            color: #252422;
+            font-size: 0.8em;
+        }
+
+        div:hover{
+            color: #EB5E28;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam saepe placeat assumenda? Magnam laudantium iure dolor cumque dignissimos suscipit provident quidem nemo, quam quo autem placeat vel error, consequuntur deserunt!</p>
+    </div>
+    <p>Fim do exemplo!</p>
+</body>
+</html>

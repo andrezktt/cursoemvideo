@@ -1,0 +1,25 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(45deg, #a9927d, #5e503f);
+}
+main {
+    background-color: #f2f4f3;
+    border-radius: 20px;
+    box-shadow: 5px 3px 10px #2a241cc6;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+}
+h1 {
+    color: #0a0908;
+    text-align: center;
+}
+h2 {
+    color: #22333b;
+}
+p {
+    text-align: justify;
+}

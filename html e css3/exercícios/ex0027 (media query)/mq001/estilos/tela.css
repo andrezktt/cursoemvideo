@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: #222;
+    color: beige;
+}
+
+header {
+    padding: 20px 50px;
+    background-color: orangered;
+    color: beige;
+    border-radius: 0px 0px 20px 20px
+}
+
+menu li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 5px;
+    background-color: rgb(141, 38, 0);
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+menu li:hover {
+    background-color: #222;
+    color: beige;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+article {
+    width: 600px;
+    display: block;
+    text-align: justify;
+    line-height: 1.5em;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+article h2 {
+    margin-bottom: 25px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+

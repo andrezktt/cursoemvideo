@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@500&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald:wght@500&display=swap');
+
+        body {
+            background-color: #CCC5B9;
+            color: #252422;
+            font-family: 'montserrat', sans-serif;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: #252422;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+        a:visited {
+            color: #FFFCF2;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #EB5E28;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aquamarine;
+        }
+
+        a::after {
+            content: '[link]';
+            color: #EB5E28;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Alguns dos Meus Links:</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/andre_zkt/" target="_blank">Me siga no Instagram</a></li>
+        <li><a href="https://www.behance.net/andrezicatti" target="_blank">Conheça o meu Portfólio Profissional</a></li>
+        <li><a href="https://www.linkedin.com/in/andr%C3%A9-zicatti/" target="_blank">Veja meu Currículo no LinkedIn</a></li>
+    </ul>
+</body>
+</html>

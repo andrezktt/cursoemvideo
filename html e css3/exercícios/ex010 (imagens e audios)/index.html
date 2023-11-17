@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/p-300.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/m-700.png" type="image/png">
+    <img src="imagens/g-1000.png" alt="Imagem Flexível">
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="mídia/01. Count Me Out.mp3" controls></audio> <!-- MP3 WAV OGG-->
+
+    <p>Ou podemos inserir o áudio da seguinte forma (ver o código):</p>
+    <audio preload="metadata" controls> <!-- autoplay loop -->
+        <source src="mídia/01. Count Me Out.mp3" type="audio/mpeg">
+        <source src="mídia/01. Count Me Out.ogg" type="audio/ogg">
+        <source src="mídia/01. Count Me Out.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="mídia/01. Count Me Out.mp3">Clique aqui para baixar  arquivo MP3</a></p>
+    </audio>
+</picture>
+</body>
+</html>

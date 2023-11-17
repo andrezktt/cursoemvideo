@@ -1,0 +1,147 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+/* CSS HEX */
+--timberwolf: #dad7cdff;
+--sage: #a3b18aff;
+--fern-green: #588157ff;
+--hunter-green: #3a5a40ff;
+--brunswick-green: #344e41ff;
+
+/* Fonts */
+--titulo:'Chakra Petch', sans-serif;;
+--texto:'Roboto', sans-serif;;
+}
+
+body {
+    margin: 0px;
+    font: normal 400 1em var(--texto);
+    background-color: var(--sage);
+    color: var(--brunswick-green);
+}
+
+header {
+    background-color: var(--brunswick-green);
+    color: var(--timberwolf);
+    text-align: center;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+header > h1 {
+    font: normal 700 2.5em var(--titulo);
+    margin: 10px;
+}
+
+.subtitulo {
+    margin: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: left;
+    margin-top: 30px;
+}
+
+nav > span {
+    font-size: 0.9em;
+    margin: 0px 7px;
+}
+
+nav > span:hover {
+    background-color: var(--sage);
+    color: var(--brunswick-green);
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+main {
+    min-width: 600px;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--timberwolf);
+    padding: 30px 40px 20px 40px;
+    border-radius: 20px;
+}
+
+main > h2 { 
+    margin: 0px;
+    font: normal 700 1.75em var(--titulo);
+}
+
+h3 { 
+    background-color: var(--timberwolf);
+    border-color: var(--brunswick-green);
+    border-style: solid;
+    border-width: 3px;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font: normal 600 1.5em var(--titulo);
+}
+
+p {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+a {
+    color: var(--brunswick-green);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: var(--sage);
+}
+
+div.video {
+    position: relative;
+    background-color: var(--hunter-green);
+    height: 0px;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    width: 94%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--sage);
+    color: var(--brunswick-green);
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 0px
+}
+.subaside {
+    margin: 0px;
+    background-color: var(--brunswick-green);
+    color: var(--timberwolf);
+    padding: 15px 30px;
+    border-radius: 20px 20px 0px 0px;
+    font-weight: 700;
+}
+
+aside > ul {
+    columns: 2;
+    list-style-position: inside;
+    margin: 15px auto;
+}
+
+aside > p {
+    margin: 10px 30px;
+}
+
+footer {
+
+}
